@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: xx-large;
+    
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+    background-image: url(img/backgroundimg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #00bcd4;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background-image: url(img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.hero-content{
+    padding-bottom: 0px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero span {
+    font-size: 3rem;
+    color: rgb(241, 10, 10);
+}
+
+.hero p {
+    margin: 15px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* SKILLS */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+
+}
+
+.skill {
+    background: #f4f4f4;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+/* PROJECTS */
+.project-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* CONTACT */
+.contact p {
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.sm {
+
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
